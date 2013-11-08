@@ -1,16 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-    <head>
-        <!-- Escapio template redesign -->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <!-- Facebook sharing information tags -->
-        <meta property="og:title" content="*|MC:SUBJECT|*">
-        
-        <title>*|MC:SUBJECT|*</title>
+	<head>
+		<!-- Escapio template redesign -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Facebook sharing information tags -->
+		<meta property="og:title" content="*|MC:SUBJECT|*">
+		<title>*|MC:SUBJECT|*</title>
 		<style type="text/css">
 		/* NOTE: CSS should be inlined to avoid having it stripped in certain email clients like GMail. 
-        MailChimp automatically inlines CSS for you or you can use this tool: http://beaker.mailchimp.com/inline-css. */
-        
+		MailChimp automatically inlines CSS for you or you can use this tool: http://beaker.mailchimp.com/inline-css. */
 			/* Client-specific Styles */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" button. */
 			body{width:100% !important;} /* Force Hotmail to display emails at full width */
@@ -142,7 +140,7 @@
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:none;
 			}
-			
+		
 			.preheaderContent div img{
 				height:auto;
 				max-width:600px;
@@ -250,23 +248,8 @@
 				display:inline;
 				margin-bottom:0px;
 			}
-			
-			.devider{
-				/*@editable*/ background-color:#342922;
-			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Footer
-			* @section footer style
-			* @tip Set the background color and top border for your email's footer area.
-			* @theme footer
-			*/
-			#templateFooter{
-				/*@editable*/ background-color:#FDFDFD;
-				/*@editable*/ border-top:0;
-			}
 
 			/**
 			* @tab Footer
@@ -275,7 +258,7 @@
 			* @theme footer
 			*/
 			.footerContent div{
-				/*@editable*/ color:#707070;
+				/*@editable*/ color:#FCF8F0;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:125%;
@@ -288,23 +271,18 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent div a:link, .footerContent div a:visited{
-				/*@editable*/ color:#336699;
+				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:underline;
+				/*@editable*/ text-decoration:none;
 			}
 
 			.footerContent img{
 				display:inline;
 			}
 
-			/**
-			* @tab Footer
-			* @section social bar style
-			* @tip Set the background color and border for your email's footer social bar.
-			*/
-			#social{
-				/*@editable*/ background-color:#FAFAFA;
-				/*@editable*/ border:1px solid #F5F5F5;
+			#footer{
+				/*@editable*/ background-color:#342922;
+				/*@editable*/ color:#4a382d;
 			}
 
 			/**
@@ -321,22 +299,8 @@
 			* @section utility bar style
 			* @tip Set the background color and border for your email's footer utility bar.
 			*/
-			#utility{
-				/*@editable*/ background-color:#FDFDFD;
-				/*@editable*/ border-top:0px solid #F5F5F5;
-			}
-
-			/**
-			* @tab Footer
-			* @section utility bar style
-			* @tip Set the background color and border for your email's footer utility bar.
-			*/
 			#utility div{
 				/*@editable*/ text-align:center;
-			}
-
-			#monkeyRewards img{
-				max-width:160px;
 			}
 		</style>
 	</head>
@@ -413,7 +377,7 @@
 													<tr>
 														<td valign="top">
 															<div mc:edit="std_content00">
-																<span class="h4">*|IF:FNAME|*Dear *|FNAME|*,*|ELSE:|*Hello,*|END:IF|*</span>
+																<span class="h4">*|IF:FNAME|*Guten Tag *|FNAME|* *|LNAME|*,*|ELSE:|*Guten Tag,*|END:IF|*</span>
 																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 																<br>
 																<br>
@@ -457,10 +421,10 @@
 							</tr>
 							<!-- // End Content Block 1 \\ -->
 							<!-- // BEGIN Footer Block \\ -->
-							<tr>
+							<trid="footer">
 								<td align="center" valign="top">
 									<!-- // Begin Template Footer \\ -->
-									<table class="contentBox" border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateFooter">
+									<table border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateFooter">
 										<tr>
 											<td valign="top" class="footerContent">
 												<!-- // Begin Module: Standard Footer \\ -->
@@ -501,20 +465,15 @@
 															</div>
 															<br>
 														</td>
-														<td valign="top" width="170" id="monkeyRewards">
-															<br>
-															<div mc:edit="monkeyrewards">
-																*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
-															</div>
-															<br>
-														</td>
 													</tr>
 													<tr>
 														<td colspan="2" valign="middle" id="utility">
 															<div mc:edit="std_utility">
-																&nbsp;<a href="*|UNSUB|*">unsubscribe from this list</a> | 
-																<a href="*|UPDATE_PROFILE|*">update subscription preferences</a><!-- *|IFNOT:ARCHIVE_PAGE|* --> | 
-																<a href="*|ARCHIVE|*">view email in browser</a><!-- *|END:IF|* -->&nbsp;
+																Dieser Newsletter wurde von Escapio versandt an *|EMAIL|*.
+																Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>
+																<br><br>
+																<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
+																<!-- *|IFNOT:ARCHIVE_PAGE|* --><a href="*|ARCHIVE|*">view email in browser</a><!-- *|END:IF|* -->
 															</div>
 														</td>
 													</tr>
