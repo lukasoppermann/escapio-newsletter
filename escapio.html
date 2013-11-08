@@ -325,13 +325,13 @@
 													<a target="_blank" href="http://www.facebook.com/escapio">Escapio bei Facebook</a>
 													<!-- // Language: Spanish \\ -->
 													*|ELSEIF:LANGCODE=es|*
-													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
-													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
-													<a target="_blank" href="http://www.facebook.com/escapio">Escapio bei Facebook</a>
+													<a target="_blank" href="*|ARCHIVE|*">View in browser</a> | 
+													<a target="_blank" href="*|FORWARD|*">Forward to friends</a> | 
+													<a target="_blank" href="http://www.facebook.com/escapio">Escapio on Facebook</a>
 													<!-- // Language: English \\ -->
 													*|ELSE:|*
-													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
-													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
+													<a target="_blank" href="*|ARCHIVE|*">View in browser</a> | 
+													<a target="_blank" href="*|FORWARD|*">Forward to friends</a> | 
 													<a target="_blank" href="http://www.facebook.com/escapio">Escapio on Facebook</a>
 													*|END:IF|*
 												</div>
@@ -434,7 +434,7 @@
 							</tr>
 							<!-- // End Content Block 1 \\ -->
 							<!-- // BEGIN Content Block Dates \\ -->
-							<tr mc:hideable mc:repeatable="datesBlock" id="datesBlock">
+							<tr mc:hideable>
 								<td align="center" valign="top">
 									<!-- // Begin Content \\ -->
 									<table border="0" class="contentBox" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
@@ -500,7 +500,7 @@
 																	Haben sich Ihre Daten geändert? <a href="*|UPDATE_PROFILE|*">Profil aktualisieren</a>. 
 																	<br><br>
 																	Dieser Newsletter wurde von Escapio versandt an *|EMAIL|*.<br>
-																	Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>
+																	Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>.
 																	<br><br>
 																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Deutschland<br>
 																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://de.escapio.com">www.escapio.com</a>
@@ -508,10 +508,29 @@
 																	Vertretungsberechtigter Geschäftsführer: Uwe Frers<br>
 																	Registergericht: Amtsgericht Berlin Charlottenburg | Registernummer: HRB 94491 B
 																<!-- // Language: Spanish \\ -->
+																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a> 
+																	<br><br>
+																	This newsletter was sent to *|EMAIL|* by Escapio.<br>
+																	If you no longer wish to receive our special offers, <a href="*|UNSUB|*">unsubscribe from the newsletter here</a>. 
+																	<br><br>
+																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Germany<br>
+																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
+																	<br><br>
+																	Managing Director: Uwe Frers<br>
+																	Register Court: Amtsgericht Berlin Charlottenburg | Trade Register No.: HRB 94491 B
 																*|ELSEIF:LANGCODE=es|*
 																<!-- // Language: English \\ -->
 																*|ELSE:|*
-																
+																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a> 
+																	<br><br>
+																	This newsletter was sent to *|EMAIL|* by Escapio.<br>
+																	If you no longer wish to receive our special offers, <a href="*|UNSUB|*">unsubscribe from the newsletter here</a>. 
+																	<br><br>
+																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Germany<br>
+																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
+																	<br><br>
+																	Managing Director: Uwe Frers<br>
+																	Register Court: Amtsgericht Berlin Charlottenburg | Trade Register No.: HRB 94491 B
 																*|END:IF|*
 															</div>
 														</td>
