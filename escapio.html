@@ -37,15 +37,6 @@
 
 			/**
 			* @tab Page
-			* @section email border
-			* @tip Set the border for your email.
-			*/
-			#templateContainer{
-				/*@editable*/ border: 0px solid #DDDDDD;
-			}
-
-			/**
-			* @tab Page
 			* @section heading 1
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 			* @theme heading1
@@ -211,7 +202,7 @@
 			* @tip Set the background color for your email's body area.
 			*/
 			#templateContainer, .bodyContent{
-				/*@editable*/ background-color:#FDFDFD;
+				/*@editable background-color:#FDFDFD;*/
 			}
 
 			/**
@@ -254,6 +245,10 @@
 			.bodyContent .signature-uwe img{
 				display:inline;
 				margin-bottom:0px;
+			}
+			
+			.devider{
+				/*@editable*/ background-color:#342922;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
@@ -387,20 +382,20 @@
                                     <!-- // End Template Header \\ -->
                                 </td>
                             </tr>
-                        	<tr>
+                        	<tr mc:hideable>
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Body \\ -->
-                                	<table border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateBody">
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateBody">
 										<tr mc:hideable>
 			                            	<td align="center" valign="top">
 			                                	<!-- // BEGIN HEADER -->
-			                                	<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+			                                	<table border="0" cellpadding="10" cellspacing="0" width="100%">
 			                                    	<tr>
 			                                        	<td align="center" valign="top">
 			                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
 			                                                	<tr>
 			                                                        <td class="headerContent">
-			                                                            <img src="7083_carlton_hotel_st_moritz_580x300.jpg" width="100%" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+			                                                            <img src="7083_carlton_hotel_st_moritz_580x300.jpg" id="bannerImage" width="100%" style="max-width:600px;" id="bannerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
 			                                                        </td>
 			                                                    </tr>
 			                                                </table>
@@ -415,7 +410,7 @@
                                             <td valign="top" class="bodyContent">
                                 
                                                 <!-- // Begin Module: Standard Content \\ -->
-                                                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                                <table border="0" cellpadding="10" cellspacing="10" width="100%">
                                                     <tr>
                                                         <td valign="top">
                                                             <div mc:edit="std_content00">
@@ -438,7 +433,7 @@
 				                                                    </tr>
 				                                                	<tr>
 				                                                        <td class="signature-uwe">
-				                                                            <img src="unterschrift-uwe.jpg" />
+				                                                            <img src="unterschrift-uwe.jpg" mc:edit="signature_uwe" />
 				                                                        </td>
 				                                                    </tr>
 				                                                	<tr>
@@ -459,7 +454,81 @@
                                     <!-- // End Template Body \\ -->
                                 </td>
                             </tr>
-                        	<tr>
+                        	<tr mc:hideable><td class="devider" width="100%" height="10"></td></tr>
+                        	<tr mc:hideable>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateBody">
+										<tr mc:hideable>
+			                            	<td align="center" valign="top">
+			                                	<!-- // BEGIN HEADER -->
+			                                	<table border="0" cellpadding="10" cellspacing="0" width="100%">
+			                                    	<tr>
+			                                        	<td align="center" valign="top">
+			                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			                                                	<tr>
+			                                                        <td class="headerContent">
+			                                                            <img src="7083_carlton_hotel_st_moritz_580x300.jpg" id="bannerImage" width="100%" style="max-width:600px;" id="bannerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+			                                                        </td>
+			                                                    </tr>
+			                                                </table>
+			                                            </td>
+			                                        </tr>
+			                                    </table>
+			                                    <!-- END HEADER \\ -->
+			                                </td>
+			                            </tr>
+								
+								    	<tr>
+                                            <td valign="top" class="bodyContent">
+                                
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="10" cellspacing="10" width="100%">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <div mc:edit="std_content00">
+                                                                <span class="h4">*|IF:FNAME|*Dear *|FNAME|*,*|ELSE:|*Hello,*|END:IF|*</span>
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                                <br>
+                                                                <br>
+                                                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                    <tr mc:hideable>
+                                                        <td valign="top">
+															<div>
+				                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				                                                	<tr>
+				                                                        <td class="signature-uwe-before" mc:edit="signature-uwe-before">
+																			Gute Reise wünscht Ihr
+				                                                        </td>
+				                                                    </tr>
+				                                                	<tr>
+				                                                        <td class="signature-uwe">
+				                                                            <img src="unterschrift-uwe.jpg" mc:edit="signature_uwe" />
+				                                                        </td>
+				                                                    </tr>
+				                                                	<tr>
+				                                                        <td class="signature-uwe-after" mc:edit="signature-uwe-after">
+																			Uwe Frers, Geschäftsfürher
+				                                                        </td>
+				                                                    </tr>
+				                                                </table>
+															</div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+							<tr mc:hideable><td class="devider" width="100%" height="10"></td></tr>
+							<tr >
                             	<td align="center" valign="top">
                                     <!-- // Begin Template Footer \\ -->
                                 	<table border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateFooter">
@@ -526,6 +595,7 @@
                                     <!-- // End Template Footer \\ -->
                                 </td>
                             </tr>
+							
                         </table>
                         <br>
                     </td>
