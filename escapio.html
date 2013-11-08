@@ -318,8 +318,8 @@
 										<tr>
 											<td valign="top" align="center">
 												<div mc:edit="std_preheader_content">
-													<a target="_blank" href="http://us1.campaign-archive2.com/?u=47c66b18dec906d457d8c5268&amp;id=9b0676a512&amp;e=[UNIQID]">Diesen Newsletter online lesen</a> | 
-													<a target="_blank" href="http://us1.forward-to-friend.com/forward?u=47c66b18dec906d457d8c5268&amp;id=9b0676a512&amp;e=[UNIQID]">An Freunde weiterleiten</a> | 
+													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
+													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
 													<a target="_blank" href="http://www.facebook.com/escapio">Escapio bei Facebook</a>
 												</div>
 											</td>
@@ -421,7 +421,7 @@
 							</tr>
 							<!-- // End Content Block 1 \\ -->
 							<!-- // BEGIN Footer Block \\ -->
-							<trid="footer">
+							<tr id="footer">
 								<td align="center" valign="top">
 									<!-- // Begin Template Footer \\ -->
 									<table border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateFooter">
@@ -430,50 +430,26 @@
 												<!-- // Begin Module: Standard Footer \\ -->
 												<table border="0" cellpadding="10" cellspacing="0" width="100%">
 													<tr>
-														<td colspan="2" valign="middle" id="social">
-															<div mc:edit="std_social">
-																&nbsp;<a href="*|TWITTER:PROFILEURL|*">follow on Twitter</a> | 
-																<a href="*|FACEBOOK:PROFILEURL|*">friend on Facebook</a> | 
-																<a href="*|FORWARD|*">forward to a friend</a>&nbsp;
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td valign="top" width="370">
-															<br>
-															<div mc:edit="std_footer">
-																*|IF:LIST|*
-																<em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
-																<br>
-																<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-																*|LIST:DESCRIPTION|*
-																<br>
-																<strong>Our mailing address is:</strong>
-																<br>
-																*|HTML:LIST_ADDRESS_HTML|*
-																<br>
-																<!-- *|END:IF|* -->
-																*|ELSE:|*
-																<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-																<em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
-																<br>
-																<strong>Our mailing address is:</strong>
-																<br>
-																*|USER:ADDRESS_HTML|*
-																<!-- *|END:IF|* -->
-																*|END:IF|*
-															</div>
-															<br>
-														</td>
-													</tr>
-													<tr>
 														<td colspan="2" valign="middle" id="utility">
 															<div mc:edit="std_utility">
-																Dieser Newsletter wurde von Escapio versandt an *|EMAIL|*.
-																Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>
-																<br><br>
-																<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
-																<!-- *|IFNOT:ARCHIVE_PAGE|* --><a href="*|ARCHIVE|*">view email in browser</a><!-- *|END:IF|* -->
+																<!-- // Language: German \\ -->
+																*|IF:LANGCODE=de|*
+																	Haben sich Ihre Daten geändert? <a href="*|UPDATE_PROFILE|*">Profil aktualisieren</a>. 
+																	<br><br>
+																	Dieser Newsletter wurde von Escapio versandt an *|EMAIL|*.<br>
+																	Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>
+																	<br><br>
+																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Deutschland<br>
+																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://de.escapio.com">www.escapio.com</a>
+																	<br><br>
+																	Vertretungsberechtigter Geschäftsführer: Uwe Frers<br>
+																	Registergericht: Amtsgericht Berlin Charlottenburg | Registernummer: HRB 94491 B
+																<!-- // Language: Spanish \\ -->
+																*|ELSEIF:LANGCODE=es|*
+																<!-- // Language: English \\ -->
+																*|ELSE:|*
+																
+																*|END:IF|*
 															</div>
 														</td>
 													</tr>
