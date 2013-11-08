@@ -318,9 +318,22 @@
 										<tr>
 											<td valign="top" align="center">
 												<div mc:edit="std_preheader_content">
+													<!-- // Language: German \\ -->
+													*|IF:LANGCODE=de|*
 													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
 													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
 													<a target="_blank" href="http://www.facebook.com/escapio">Escapio bei Facebook</a>
+													<!-- // Language: Spanish \\ -->
+													*|ELSEIF:LANGCODE=es|*
+													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
+													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
+													<a target="_blank" href="http://www.facebook.com/escapio">Escapio bei Facebook</a>
+													<!-- // Language: English \\ -->
+													*|ELSE:|*
+													<a target="_blank" href="*|ARCHIVE|*">Diesen Newsletter online lesen</a> | 
+													<a target="_blank" href="*|FORWARD|*">An Freunde weiterleiten</a> | 
+													<a target="_blank" href="http://www.facebook.com/escapio">Escapio on Facebook</a>
+													*|END:IF|*
 												</div>
 											</td>
 										</tr>
