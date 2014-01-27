@@ -82,7 +82,7 @@
 				/*@editable*/ background-color:#342922;
 			}
 			.preheaderContent div{
-				/*@editable*/ color:#4a382d;
+				/*@editable*/ color:#ffffff;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:11px;
 				/*@editable*/ line-height:120%;
@@ -114,9 +114,22 @@
 				/*@editable*/ padding: 0px 0;
 				/*@editable*/ text-align:center;
 				/*@editable*/ vertical-align:middle;
+				height: auto !important;
+				width: 100% !important;
+				max-width: 600px !important;
+			}
+			.headerContent img{
+				width: 100%;
 			}
 			.logoHeader{
+				/*@editable*/ color:#333333;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:34px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
 				/*@editable*/ padding: 20px 0;
+				/*@editable*/ text-align:center;
+				/*@editable*/ vertical-align:middle;
 			}
 			.headerContent a:link, .headerContent a:visited{
 				/*@editable*/ color:#91805f;
@@ -216,9 +229,10 @@
 					font-size: 24px !important;
 				}
 	         .column{
+					 padding: 20px 2.5%;
 	             display:block !important;
-	             width:100% !important;
-					 max-width: 100% !important;
+	             width: 95% !important;
+					 max-width: 95% !important;
 	         }
 				.column img{
 					width:100% !important;
@@ -287,7 +301,7 @@
 								<td align="center" valign="top">
 									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateHeader">
 										<tr>
-											<td class="headerContent logoHeader">
+											<td class="logoHeader">
 												<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/escapio_logo_newsletter.png" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
 											</td>
 										</tr>
@@ -310,7 +324,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td class="headerContent">
-																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-580x290.jpg" width="100%" style="max-width:600px;" id="bannerImage" mc:label="banner_image" mc:edit="banner_image" mc:allowdesigner mc:allowtext />
+																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-580x290.jpg" width="100%" style="width: 100%;" id="bannerImage" mc:label="banner_image" mc:edit="banner_image" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 															</table>
@@ -475,9 +489,9 @@
 															<div mc:edit="std_content01">
 																<span class="h4">Headline for events</span>
 															</div>
-															<table border="0" cellpadding="0" cellspacing="10" width="100%">
-																<tr mc:repeatable><td mc:edit="month" class="month">September</td><td mc:edit mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
-																<tr mc:repeatable><td mc:edit="month" class="month">October</td><td mc:edit mc:edit="days" class="days">14. bis 21.08 | 21. bis 28.08 | 28.08 bis 04.09</td></tr>
+															<table border="0" cellpadding="0" cellspacing="10" width="100%" mc:repeatable>
+																<tr><td mc:edit="month" class="month">September</td></tr>
+																<tr><td mc:edit mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
 															</table>
 														</td>
 													</tr>
