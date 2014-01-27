@@ -18,27 +18,11 @@
 			body{margin:0; padding:0;}
 			img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;}
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
-
 			/* Template Styles */
-
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Page
-			* @section background color
-			* @tip Set the background color for your email. You may want to choose one that matches your company's branding.
-			* @theme page
-			*/
 			body, .backgroundTable{
 				/*@editable*/ background-color:#342922;
 			}
-
-			/**
-			* @tab Page
-			* @section heading 1
-			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
-			* @theme heading1
-			*/
 			h1, .h1{
 				/*@editable*/ color:#202020;
 				display:block;
@@ -49,13 +33,6 @@
 				margin-bottom:10px;
 				/*@editable*/ text-align:left;
 			}
-
-			/**
-			* @tab Page
-			* @section heading 2
-			* @tip Set the styling for all second-level headings in your emails.
-			* @theme heading2
-			*/
 			h2, .h2{
 				/*@editable*/ color:#202020;
 				display:block;
@@ -66,13 +43,6 @@
 				margin-bottom:10px;
 				/*@editable*/ text-align:left;
 			}
-
-			/**
-			* @tab Page
-			* @section heading 3
-			* @tip Set the styling for all third-level headings in your emails.
-			* @theme heading3
-			*/
 			h3, .h3{
 				/*@editable*/ color:#202020;
 				display:block;
@@ -83,13 +53,6 @@
 				margin-bottom:10px;
 				/*@editable*/ text-align:left;
 			}
-
-			/**
-			* @tab Page
-			* @section heading 4
-			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			* @theme heading4
-			*/
 			h4, .h4{
 				/*@editable*/ color:#202020;
 				display:block;
@@ -100,17 +63,11 @@
 				margin-bottom:10px;
 				/*@editable*/ text-align:left;
 			}
-			/**
-			* @tab Page
-			* @section heading 4
-			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
-			* @theme heading4
-			*/
 			h5, .h5{
 				/*@editable*/ color:#202020;
 				display:block;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-size:18px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				margin-bottom:10px;
@@ -120,24 +77,10 @@
 			.contentBox{
 				background-color: #fff;
 			}
-
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Header
-			* @section preheader style
-			* @tip Set the background color for your email's preheader area.
-			* @theme page
-			*/
 			#templatePreheader{
 				/*@editable*/ background-color:#342922;
 			}
-
-			/**
-			* @tab Header
-			* @section preheader text
-			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
-			*/
 			.preheaderContent div{
 				/*@editable*/ color:#4a382d;
 				/*@editable*/ font-family:Arial;
@@ -145,12 +88,6 @@
 				/*@editable*/ line-height:120%;
 				/*@editable*/ text-align:center;
 			}
-
-			/**
-			* @tab Header
-			* @section preheader link
-			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
-			*/
 			.preheaderContent div a:link, .preheaderContent div a:visited{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
@@ -161,46 +98,26 @@
 				height:auto;
 				max-width:600px;
 			}
-
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Header
-			* @section header style
-			* @tip Set the background color and border for your email's header area.
-			* @theme header
-			*/
 			#templateHeader{
 				/*@editable*/ background-color:#910000;
 				/*@editable*/ border-bottom:0;
+				height: auto;
+				min-height: 120px;
 			}
-
-			/**
-			* @tab Header
-			* @section header text
-			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-			*/
-			/**
-			* @tab Header
-			* @section header text
-			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
-			*/
 			.headerContent{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:34px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ padding:0;
+				/*@editable*/ padding: 0px 0;
 				/*@editable*/ text-align:center;
 				/*@editable*/ vertical-align:middle;
 			}
-
-			/**
-			* @tab Header
-			* @section header link
-			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
-			*/
+			.logoHeader{
+				/*@editable*/ padding: 20px 0;
+			}
 			.headerContent a:link, .headerContent a:visited{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
@@ -212,24 +129,7 @@
 				max-width:600px !important;
 				width:100% !important;
 			}
-
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Body
-			* @section body style
-			* @tip Set the background color for your email's body area.
-			*/
-			#templateContainer, .bodyContent{
-				/*@editable background-color:#FDFDFD;*/
-			}
-
-			/**
-			* @tab Body
-			* @section body text
-			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
-			* @theme main
-			*/
 			.bodyContent div{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
@@ -237,12 +137,6 @@
 				/*@editable*/ line-height:150%;
 				/*@editable*/ text-align:left;
 			}
-
-			/**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
 			.bodyContent div a:link, .bodyContent div a:visited{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
@@ -253,19 +147,13 @@
 				display:inline;
 				margin-bottom:10px;
 			}
-
-			/**
-			* @signature
-			*/
 			.signature-uwe-after{
 				font-size: 10px;
 			}
-
 			.bodyContent .signature-uwe img{
 				display:inline;
 				margin-bottom:0px;
 			}
-
 			.month{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
@@ -281,17 +169,10 @@
 			.booking-link{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:14px;	
+				/*@editable*/ font-size:16px;	
 				/*@editable*/ font-weight: bold;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
-
-			/**
-			* @tab Footer
-			* @section footer text
-			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
-			* @theme footer
-			*/
 			.footerContent div{
 				/*@editable*/ color:#FCF8F0;
 				/*@editable*/ font-family:Arial;
@@ -299,58 +180,70 @@
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
 			}
-
-			/**
-			* @tab Footer
-			* @section footer link
-			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
-			*/
 			.footerContent div a:link, .footerContent div a:visited{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:none;
 			}
-
 			.footerContent img{
 				display:inline;
 			}
-
 			#footer{
-				/*@editable*/ background-color:#342922;
-				/*@editable*/ color:#4a382d;
+				/*@editable*/ background-color:#342922 !important;
+				/*@editable*/ color:#ffffff !important;
 			}
-
-			/**
-			* @tab Footer
-			* @section social bar style
-			* @tip Set the background color and border for your email's footer social bar.
-			*/
+			a.tel-link{
+				text-decoration: none !important;
+				color: #ffffff !important;
+			}
 			#social div{
 				/*@editable*/ text-align:center;
 			}
-
-			/**
-			* @tab Footer
-			* @section utility bar style
-			* @tip Set the background color and border for your email's footer utility bar.
-			*/
 			#utility div{
 				/*@editable*/ text-align:center;
+				/*@editable*/ color:#ffffff !important;
 			}
-			
-			/**
-			* mobile
-			*/
+			.column{
+				padding: 10px;
+				max-width: 280px !important;
+			}
 	      @media only screen and (max-width:480px){
-
+				.content-block-01, .bodyContent div{
+					font-size: 20px !important;
+					line-height: 125% !important;
+				}
+				h5, .h5{
+					font-size: 24px !important;
+				}
+	         .column{
+	             display:block !important;
+	             width:100% !important;
+					 max-width: 100% !important;
+	         }
+				.column img{
+					width:100% !important;
+					max-width: 100% !important;
+				}
+				.booking-link{
+					font-size: 20px !important;
+				}
+				.month{
+					/*@editable*/ font-size:18px !important;	
+					min-width: 80px !important;
+				}
+				.days{
+					/*@editable*/ font-size:18px !important;	
+				}
 	      }
 		</style>
 	</head>
-	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="max-width: 100%;">
 		<center>
-			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="max-width: 100%;" id="backgroundTable">
 				<tr>
 					<td align="center" valign="top">
+						
+						
 						<!-- // Begin Template Preheader \\ -->
 						<table border="0" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templatePreheader">
 							<tr>
@@ -385,22 +278,24 @@
 							</tr>
 						</table>
 						<!-- // End Template Preheader \\ -->
+						
+						
 						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateContainer">
+							
+							<!-- Logo Header -->
 							<tr mc:hideable>
 								<td align="center" valign="top">
-									<!-- // Begin Template Header \\ -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; min-height:120px;" id="templateHeader">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateHeader">
 										<tr>
-											<td class="headerContent">
-												<!-- // Begin Module: Standard Header Image \\ -->
+											<td class="headerContent logoHeader">
 												<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/escapio_logo_newsletter.png" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
-												<!-- // End Module: Standard Header Image \\ -->
 											</td>
 										</tr>
 									</table>
-									<!-- // END Header \\ -->
 								</td>
 							</tr>
+							
+							
 							<!-- // BEGIN Content Block 1 \\ -->
 							<tr mc:hideable>
 								<td align="center" valign="top">
@@ -431,7 +326,7 @@
 												<table border="0" cellpadding="10" cellspacing="10" width="100%">
 													<tr>
 														<td valign="top">
-															<div mc:edit="std_content00">
+															<div mc:edit="std_content00" class="content-block-01">
 																<span class="h4">*|IF:FNAME|*Guten Tag *|FNAME|* *|LNAME|*,*|ELSE:|*Guten Tag,*|END:IF|*</span>
 																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 																<br>
@@ -469,7 +364,8 @@
 									<!-- END SPACER \\ -->
 								</td>
 							</tr>
-							<!-- // End Content Block 1 \\ -->
+
+
 							<!-- // BEGIN Content Block Selection \\ -->
 							<tr mc:hideable>
 								<td align="center" valign="top">
@@ -478,13 +374,14 @@
 										<!-- // Banner Image -->
 										<tr mc:repeatable>
 											<td align="center" valign="top">
-												<table border="0" cellpadding="10" cellspacing="0" >
+												<table border="0" cellpadding="0" cellspacing="0" >
 													<tr>
-														<td align="center" valign="top" width="280">
+														
+														<td align="center" valign="top" class="column">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="100%" style="max-width:290px;" mc:label="boximg1" mc:edit="boximg1" mc:allowdesigner mc:allowtext />
+																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:290px;" mc:label="boximg1" mc:edit="boximg1" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 																<tr>
@@ -506,11 +403,11 @@
 															</table>
 														</td>
 														
-														<td align="center" valign="top" width="280">
+														<td align="center" valign="top" class="column">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="100%" style="max-width:290px;" mc:label="boximg2" mc:edit="boximg2" mc:allowdesigner mc:allowtext />
+																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:290px;" mc:label="boximg2" mc:edit="boximg2" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 																<tr>
@@ -542,7 +439,9 @@
 									<!-- END SPACER \\ -->
 								</td>
 							</tr>
-							<!-- // End Content Block Selection \\ -->
+
+
+
 							<!-- // BEGIN Content Block Dates \\ -->
 							<tr mc:hideable>
 								<td align="center" valign="top">
@@ -577,8 +476,8 @@
 																<span class="h4">Headline for events</span>
 															</div>
 															<table border="0" cellpadding="0" cellspacing="10" width="100%">
-																<tr mc:repeatable><td mc:edit="month" class="month">Juli</td><td mc:edit mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
-																<tr mc:repeatable><td mc:edit="month" class="month">August</td><td mc:edit mc:edit="days" class="days">14. bis 21.08 | 21. bis 28.08 | 28.08 bis 04.09</td></tr>
+																<tr mc:repeatable><td mc:edit="month" class="month">September</td><td mc:edit mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
+																<tr mc:repeatable><td mc:edit="month" class="month">October</td><td mc:edit mc:edit="days" class="days">14. bis 21.08 | 21. bis 28.08 | 28.08 bis 04.09</td></tr>
 															</table>
 														</td>
 													</tr>
@@ -609,22 +508,22 @@
 																*|IF:LANGCODE=de|*
 																	Haben sich Ihre Daten geändert? <a href="*|UPDATE_PROFILE|*">Profil aktualisieren</a>. 
 																	<br><br>
-																	Dieser Newsletter wurde von Escapio versandt an *|EMAIL|*.<br>
+																	Dieser Newsletter wurde von Escapio versandt an <a href="*|EMAIL|*">*|EMAIL|*</a>.<br>
 																	Sie möchten zukünftig nicht mehr über unsere Angebote informiert werden? <a href="*|UNSUB|*">Newsletter abbestellen</a>.
 																	<br><br>
 																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Deutschland<br>
-																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://de.escapio.com">www.escapio.com</a>
+																	<a class="tel-link" href="tel:00493061651690">T +49 30 6165 1690</a>, <a class="tel-link" href="tel:00493061651699">F +49 30 6165 1699</a>, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://de.escapio.com">www.escapio.com</a>
 																	<br><br>
 																	Vertretungsberechtigter Geschäftsführer: Uwe Frers<br>
 																	Registergericht: Amtsgericht Berlin Charlottenburg | Registernummer: HRB 94491 B
 																<!-- // Language: Spanish \\ -->
 																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a> 
 																	<br><br>
-																	This newsletter was sent to *|EMAIL|* by Escapio.<br>
+																	This newsletter was sent to <a href="*|EMAIL|*">*|EMAIL|*</a> by Escapio.<br>
 																	If you no longer wish to receive our special offers, <a href="*|UNSUB|*">unsubscribe from the newsletter here</a>. 
 																	<br><br>
 																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Germany<br>
-																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
+																	<a class="tel-link" href="tel:00493061651690">T +49 30 6165 1690</a>, <a class="tel-link" href="tel:00493061651699">F +49 30 6165 1699</a>, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
 																	<br><br>
 																	Managing Director: Uwe Frers<br>
 																	Register Court: Amtsgericht Berlin Charlottenburg | Trade Register No.: HRB 94491 B
@@ -633,11 +532,11 @@
 																*|ELSE:|*
 																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a> 
 																	<br><br>
-																	This newsletter was sent to *|EMAIL|* by Escapio.<br>
+																	This newsletter was sent to <a href="*|EMAIL|*">*|EMAIL|*</a> by Escapio.<br>
 																	If you no longer wish to receive our special offers, <a href="*|UNSUB|*">unsubscribe from the newsletter here</a>. 
 																	<br><br>
 																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Germany<br>
-																	T +49 30 6165 1690, F +49 30 6165 1699, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
+																	<a class="tel-link" href="tel:00493061651690">T +49 30 6165 1690</a>, <a class="tel-link" href="tel:00493061651699">F +49 30 6165 1699</a>, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
 																	<br><br>
 																	Managing Director: Uwe Frers<br>
 																	Register Court: Amtsgericht Berlin Charlottenburg | Trade Register No.: HRB 94491 B
@@ -653,8 +552,12 @@
 								</td>
 							</tr>
 							<!-- // END Footer Block \\ -->
+							
+							
 						</table>
-						<br>
+
+
+
 					</td>
 				</tr>
 			</table>
