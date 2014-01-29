@@ -84,7 +84,7 @@
 			.preheaderContent div{
 				/*@editable*/ color:#ffffff;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:11px;
+				/*@editable*/ font-size:13px;
 				/*@editable*/ line-height:120%;
 				/*@editable*/ text-align:center;
 			}
@@ -119,7 +119,9 @@
 				max-width: 600px !important;
 			}
 			.headerContent img{
+				height: auto !important;
 				width: 100%;
+				max-width: 580px;
 			}
 			.logoHeader{
 				/*@editable*/ color:#333333;
@@ -143,14 +145,14 @@
 				width:100% !important;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
-			.bodyContent div{
+			.bodyContent{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:14px;
+				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
 				/*@editable*/ text-align:left;
 			}
-			.bodyContent div a:link, .bodyContent div a:visited{
+			.bodyContent a:link, .bodyContent a:visited{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
@@ -170,26 +172,26 @@
 			.month{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:14px;	
+				/*@editable*/ font-size:16px;	
 				/*@editable*/ font-weight: bold;
 			}
 			.days{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:14px;	
+				/*@editable*/ font-size:16px;	
 				/*@editable*/ font-weight: bold;
 			}
 			.booking-link{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:16px;	
+				/*@editable*/ font-size:18px;	
 				/*@editable*/ font-weight: bold;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
 			.footerContent div{
 				/*@editable*/ color:#FCF8F0;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:12px;
+				/*@editable*/ font-size:13px;
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
 			}
@@ -254,6 +256,7 @@
 	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="max-width: 100%;">
 		<center>
 			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="max-width: 100%;" id="backgroundTable">
+				<tbody style="background: #342922;">
 				<tr>
 					<td align="center" valign="top">
 						
@@ -324,7 +327,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td class="headerContent">
-																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-580x290.jpg" width="100%" style="width: 100%;" id="bannerImage" mc:label="banner_image" mc:edit="banner_image" mc:allowdesigner mc:allowtext />
+																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-580x290.jpg" width="100%" style="width: 100%; max-width: 580px;" id="bannerImage" mc:label="banner_image" mc:edit="banner_image" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 															</table>
@@ -576,6 +579,7 @@
 
 					</td>
 				</tr>
+			</tbody>
 			</table>
 		</center>
 	</body>
