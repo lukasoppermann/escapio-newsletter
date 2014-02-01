@@ -21,7 +21,7 @@
 			/* Template Styles */
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: COMMON PAGE ELEMENTS /\/\/\/\/\/\/\/\/\/\ */
 			body, .backgroundTable{
-				/*@editable*/ background-color:#342922;
+				/*@editable*/ background-color:#342922 !important;
 			}
 			h1, .h1{
 				/*@editable*/ color:#202020;
@@ -75,7 +75,8 @@
 			}
 
 			.contentBox{
-				background-color: #fff;
+				background-color: #ffffff !important;
+				background: #ffffff !important;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templatePreheader{
@@ -84,7 +85,7 @@
 			.preheaderContent div{
 				/*@editable*/ color:#ffffff;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:13px;
+				/*@editable*/ font-size:11px;
 				/*@editable*/ line-height:120%;
 				/*@editable*/ text-align:center;
 			}
@@ -100,7 +101,7 @@
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templateHeader{
-				/*@editable*/ background-color:#910000;
+				/*@editable*/ background-color:#910000 !important;
 				/*@editable*/ border-bottom:0;
 				height: auto;
 				min-height: 120px;
@@ -191,7 +192,7 @@
 			.footerContent div{
 				/*@editable*/ color:#FCF8F0;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:13px;
+				/*@editable*/ font-size:11px;
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
 			}
@@ -227,8 +228,11 @@
 					font-size: 20px !important;
 					line-height: 125% !important;
 				}
+				.headerContent{
+					max-width: 480px !important;
+				}
 				.headerContent img{
-					max-width: 460px;
+					max-width: 460px !important;
 				}
 				h5, .h5{
 					font-size: 24px !important;
@@ -254,6 +258,14 @@
 					/*@editable*/ font-size:18px !important;	
 				}
 	      }
+			@media only screen and (max-width:320px){
+				.headerContent{
+					max-width: 320px !important;
+				}
+				.headerContent img{
+					max-width: 300px !important;
+				}
+			}
 		</style>
 	</head>
 	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="max-width: 100%;">
@@ -308,7 +320,9 @@
 									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateHeader">
 										<tr>
 											<td class="logoHeader">
-												<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/escapio_logo_newsletter.png" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
+												<a href="http://www.escapio.de">
+													<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/escapio_logo_newsletter.png" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="">
+												</a>
 											</td>
 										</tr>
 									</table>
@@ -330,6 +344,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td class="headerContent">
+																		
 																		<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_800x500.1.1.1.1.1.jpg" width="100%" style="width: 100%; max-width: 580px;" id="bannerImage" mc:label="banner_image" mc:edit="banner_image" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
@@ -356,17 +371,17 @@
 														</td>
 													</tr>
 													<!-- // Signature -->
-													<tr mc:hideable>
+													<tr>
 														<td valign="top">
 															<div>
 																<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																	<tr>
-																		<td class="signature-uwe-before" mc:edit="signature-uwe-before">
+																		<td class="signature-uwe-before" mc:edit="signature-uwe-before" mc:hideable>
 																			Gute Reise wünscht Ihr
 																		</td>
 																	</tr>
 																	<tr>
-																		<td class="signature-uwe">
+																		<td class="signature-uwe" mc:hideable>
 																			<img src="http://de.escapio.com/public/img/email/newsletter/signature-de.gif" mc:edit="signature_uwe" />
 																		</td>
 																	</tr>
@@ -401,15 +416,23 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
+																		<div mc:edit="book_contentT01" mc:hideable>
+																			<span class="h5">Headline for hotel</span>
+																		</div>	
+																	</td>
+																</tr>
+																<tr>
+																	<td>
 																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:280px;" mc:label="boximg1" mc:edit="boximg1" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
 																		<br>
-																		<div mc:edit="book_content01">
+																		<div mc:edit="book_content01" mc:hideable>
 																			<span class="h5">Headline for hotel</span>
 																			Duis aute irure dolor in reprehenderit.
+																		</div>
 																	</td>
 																</tr>
 																<tr>
@@ -427,13 +450,20 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
+																		<div mc:edit="book_contentT02" mc:hideable>
+																			<span class="h5">Headline for hotel</span>
+																		</div>	
+																	</td>
+																</tr>
+																<tr>
+																	<td>
 																		<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:280px;" mc:label="boximg2" mc:edit="boximg2" mc:allowdesigner mc:allowtext />
 																	</td>
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
 																		<br>
-																		<div mc:edit="book_content02">
+																		<div mc:edit="book_content02" mc:hideable>
 																			<span class="h5">Headline for hotel</span>
 																			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 																		</div>
