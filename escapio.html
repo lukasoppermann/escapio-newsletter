@@ -103,8 +103,7 @@
 			#templateHeader{
 				/*@editable*/ background-color:#910000 !important;
 				/*@editable*/ border-bottom:0;
-				height: auto;
-				min-height: 120px;
+				height: 120px !important;
 			}
 			.headerContent{
 				/*@editable*/ color:#333333;
@@ -187,6 +186,7 @@
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:18px;	
 				/*@editable*/ font-weight: bold;
+				/*@editable*/ text-decoration: none;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
 			.footerContent div{
@@ -439,7 +439,7 @@
 																	<td align="right">
 																		<br>
 																		<div mc:edit="book01">
-																			<a href="buchen" class="booking-link">Hotel Buchen</a>
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png" /></a>
 																		</div>
 																	</td>
 																</tr>
@@ -473,7 +473,7 @@
 																	<td align="right">
 																		<br>
 																		<div mc:edit="book02">
-																			<a href="buchen" class="booking-link">Hotel Buchen</a>
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png" /></a>
 																		</div>
 																	</td>
 																</tr>
@@ -490,7 +490,84 @@
 								</td>
 							</tr>
 
-
+							<!-- // BEGIN Content Block Selection \\ -->
+							<tr mc:hideable>
+								<td align="center" valign="top">
+									<!-- // Begin Content \\ -->
+									<table border="0" class="contentBox" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+										<!-- // Banner Image -->
+										<tr mc:repeatable mc:variant="content with right image">
+											<td align="center" valign="top">
+												<table border="0" cellpadding="0" cellspacing="0">
+													<tr>
+														
+														<td align="center" valign="top" class="column">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td valign="top" class="bodyContent">
+																		<br>
+																		<div mc:edit="book_content01" mc:hideable>
+																			<span class="h5">Headline for hotel</span>
+																			Duis aute irure dolor in reprehenderit.
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="right">
+																		<br>
+																		<div mc:edit="book01">
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png" /></a>
+																		</div>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														
+														<td align="right" valign="top" class="column">
+															<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg2" mc:edit="boximg2" mc:allowdesigner mc:allowtext />
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr mc:repeatable mc:variant="content with left image">
+											<td align="center" valign="top">
+												<table border="0" cellpadding="0" cellspacing="0" mc:variant="content with left image">
+													<tr>												
+														<td align="right" valign="top" class="column">
+															<img src="http://de.escapio.com/public/img/email/newsletter/mock-image-290x290.jpg" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg2" mc:edit="boximg2" mc:allowdesigner mc:allowtext />
+														</td>
+														<td align="center" valign="top" class="column">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																<tr>
+																	<td valign="top" class="bodyContent">
+																		<br>
+																		<div mc:edit="book_content01" mc:hideable>
+																			<span class="h5">Headline for hotel</span>
+																			Duis aute irure dolor in reprehenderit.
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="right">
+																		<br>
+																		<div mc:edit="book01">
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png" /></a>
+																		</div>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<!-- BEGIN SPACER \\ -->
+									<table width="100%" height="10"><tr><td></td></tr></table>
+									<!-- END SPACER \\ -->
+								</td>
+							</tr>
 
 							<!-- // BEGIN Content Block Dates \\ -->
 							<tr mc:hideable>
