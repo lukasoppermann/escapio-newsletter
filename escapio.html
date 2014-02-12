@@ -15,7 +15,7 @@
 			body{-webkit-text-size-adjust:none;} /* Prevent Webkit platforms from changing default text sizes. */
 
 			/* Reset Styles */
-			body{margin:0; padding:0;}
+			body{ margin:0; padding:0; font-family:Arial; }
 			img{border:none; font-size:14px; font-weight:bold; height:auto; line-height:100%; outline:none; text-decoration:none; text-transform:capitalize;}
 			#backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
 			/* Template Styles */
@@ -195,6 +195,9 @@
 			.margin-bottom-25{
 				margin-bottom: 25px;
 			}
+			.margin-bottom-10{
+				margin-bottom: 10px;
+			}
 			.margin-top-25{
 				margin-top: 25px;
 			}
@@ -320,9 +323,8 @@
 								</td>
 							</tr>
 						</table>
-						<!-- // End Template Preheader \\ -->
-						
-						
+
+						<!-- // Begin Content \\ -->										
 						<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;" id="templateContainer">
 							
 							<!-- Logo Header -->
@@ -338,8 +340,7 @@
 										</tr>
 									</table>
 								</td>
-							</tr>
-							
+							</tr>			
 							
 							<!-- // BEGIN Content Block 1 \\ -->
 							<tr mc:hideable>
@@ -369,7 +370,7 @@
 										<tr>
 											<td valign="top" class="bodyContent">
 												<!-- // Begin Module: Standard Content \\ -->
-												<table border="0" cellpadding="10" cellspacing="10" width="100%">
+												<table border="0" cellpadding="0" cellspacing="10" width="100%">
 													<tr>
 														<td valign="top">
 															<div mc:edit="std_content00" class="content-block-01">
@@ -394,6 +395,7 @@
 																	<tr>
 																		<td class="signature-uwe">
 																			<img src="http://de.escapio.com/public/img/email/newsletter/signature-de.gif" mc:edit="signature_uwe" />
+																			<br />
 																		</td>
 																	</tr>
 																</table>
@@ -411,6 +413,31 @@
 								</td>
 							</tr>
 
+							<!-- // BEGIN Content Block Text \\ -->
+							<tr mc:hideable>
+								<td align="center" valign="top">
+									<!-- // Begin Content \\ -->
+									<table border="0" class="contentBox" cellpadding="10" cellspacing="0" width="100%" style="max-width:600px;" id="templateBody">
+										<!-- // Content -->
+										<tr>
+											<td valign="top" class="bodyContent">
+												<!-- // Begin Module: Standard Content \\ -->
+												<div mc:edit="std_content00" class="content-block-01">
+													<span class="h5">Headline for hotel</span>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+													<br>
+													<br>
+													Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</div>
+												<!-- // End Module: Standard Content \\ -->
+											</td>
+										</tr>
+									</table>
+									<!-- BEGIN SPACER \\ -->
+									<table width="100%" height="10"><tr><td></td></tr></table>
+									<!-- END SPACER \\ -->
+								</td>
+							</tr>
 
 							<!-- // BEGIN Content Block Selection \\ -->
 							<tr mc:hideable>
@@ -427,7 +454,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<div mc:edit="book_contentT01" mc:hideable class="margin-bottom-25">
+																		<div mc:edit="book_contentT01" mc:hideable class="margin-bottom-10">
 																			<span class="h5">Headline for hotel</span>
 																		</div>	
 																	</td>
@@ -459,7 +486,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<div mc:edit="book_contentT02" mc:hideable class="margin-bottom-25">
+																		<div mc:edit="book_contentT02" mc:hideable class="margin-bottom-10">
 																			<span class="h5">Headline for hotel</span>
 																		</div>	
 																	</td>
@@ -599,12 +626,16 @@
 										<tr>
 											<td valign="top" class="bodyContent">
 												<!-- // Begin Module: Standard Content \\ -->
-												<table border="0" cellpadding="10" cellspacing="10" width="100%">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
 														<td valign="top">
-															<div mc:edit="std_content01">
-																<span class="h4">Headline for events</span>
-															</div>
+															<table border="0" cellpadding="0" cellspacing="10" width="100%" mc:repeatable>
+																<tr><td>
+																<div mc:edit="std_content01">
+																	<span class="h4" style="margin-bottom: 0px;">Headline for events</span>
+																</div>
+																</tr></td>
+															</table>
 															<table border="0" cellpadding="0" cellspacing="10" width="100%" mc:repeatable>
 																<tr><td mc:edit="month" class="month">September</td></tr>
 																<tr><td mc:edit mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
@@ -621,7 +652,7 @@
 									<!-- END SPACER \\ -->
 								</td>
 							</tr>
-							<!-- // End Content Block Dates \\ -->
+
 							<!-- // BEGIN Footer Block \\ -->
 							<tr id="footer">
 								<td align="center" valign="top">
@@ -683,12 +714,8 @@
 									</table>
 								</td>
 							</tr>
-							<!-- // END Footer Block \\ -->
-							
-							
+									
 						</table>
-
-
 
 					</td>
 				</tr>
