@@ -25,55 +25,58 @@
 			body, .backgroundTable{
 				/*@editable*/ background-color:#342922 !important;
 			}
-			h1, .h1{
+			h1{
 				/*@editable*/ color:#202020;
-				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:34px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:left;
-			}
-			h2, .h2{
-				/*@editable*/ color:#202020;
-				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:30px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:left;
-			}
-			h3, .h3{
-				/*@editable*/ color:#202020;
-				display:block;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:26px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:left;
-			}
-			h4, .h4{
-				/*@editable*/ color:#202020;
-				display:block;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:22px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ text-align:left;
-			}
-			h5, .h5{
-				/*@editable*/ color:#202020;
+				margin-top: 0;
+				margin-bottom: 20px;
 				display:block;
+			}
+			h2{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:20px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+				margin-top: 0;
+				margin-bottom: 10px;
+				display:block;
+			}
+			h3{
+				/*@editable*/ color:#202020;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:18px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ text-align:left;
+				margin-top: 0;
+				margin-bottom: 10px;
+				display:block;
 			}
-
+			h4, h5{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+				margin-top: 0;
+				margin-bottom: 5px;
+				display:block;
+			}
 			.contentBox{
 				background-color: #ffffff !important;
 				background: #ffffff !important;
+			}
+			.copy-text{
+				font-size: 14px;
+				line-height: 150%;
+				font-family:Arial;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templatePreheader{
@@ -94,7 +97,7 @@
 
 			.preheaderContent div img{
 				height:auto;
-				max-width:600px;
+				width:600px;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templateHeader{
@@ -112,13 +115,11 @@
 				/*@editable*/ text-align:center;
 				/*@editable*/ vertical-align:middle;
 				height: auto !important;
-				width: 100% !important;
-				max-width: 600px !important;
+				width: 600px !important;
 			}
 			.headerContent img{
 				height: auto !important;
-				width: 100%;
-				max-width: 580px;
+				width: 580px;
 			}
 			.logoHeader{
 				/*@editable*/ color:#333333;
@@ -135,18 +136,13 @@
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
-
 			.banner-image{
 				height:auto !important;
-				max-width:600px !important;
-				width:100% !important;
+				width:600px !important;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
 			.bodyContent{
 				/*@editable*/ color:#333333;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:16px;
-				/*@editable*/ line-height:150%;
 				/*@editable*/ text-align:left;
 			}
 			.bodyContent a:link, .bodyContent a:visited{
@@ -154,7 +150,6 @@
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
-
 			.bodyContent img{
 				display:inline;
 				margin-bottom:10px;
@@ -192,6 +187,9 @@
 			.margin-bottom-10{
 				margin-bottom: 10px;
 			}
+			.margin-top-10{
+				margin-top: 10px;
+			}
 			.margin-top-25{
 				margin-top: 25px;
 			}
@@ -227,10 +225,10 @@
 				/*@editable*/ color:#ffffff !important;
 			}
 			.column{
-				padding: 10px 1%;
-        width: 48%;
+				padding: 10px 10px;
+        width: 280px;
 			}
-			@media only screen and (min-width:20px){
+/*		@media only screen and (min-width:20px){
 				#templatePreheader{ width: 100% !important; max-width: 600px; }
 				#templateContainer{ width: 100% !important; max-width: 600px; }
 			}
@@ -270,7 +268,7 @@
 					width: 100% !important;
 					max-width: 460px !important;
 				}
-	      }
+	      }*/
 		</style>
 		<!--[if gte mso 9]>
 		<style type="text/css">
@@ -370,12 +368,12 @@
 												<table border="0" cellpadding="0" cellspacing="10" width="100%">
 													<tr>
 														<td valign="top">
-															<div mc:edit="std_content00" class="content-block-01">
-																<span class="h4">*|IF:FNAME|*Guten Tag *|FNAME|* *|LNAME|*,*|ELSE:|*Guten Tag,*|END:IF|*</span><br>
-																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-																<br>
-																<br>
-																Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															<div mc:edit="std_content00" class="content-block-01 copy-text">
+																<h1>*|IF:FNAME|*Guten Tag *|FNAME|* *|LNAME|*,*|ELSE:|*Guten Tag,*|END:IF|*</h1>
+																	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+																	<br>
+																	<br>
+																	Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 															</div>
 														</td>
 													</tr>
@@ -385,7 +383,7 @@
 															<div>
 																<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																	<tr mc:hideable="">
-																		<td class="signature-uwe-before" mc:edit="signature-uwe-before">
+																		<td class="signature-uwe-before copy-text" mc:edit="signature-uwe-before">
 																			Gute Reise wünscht Ihr
 																		</td>
 																	</tr>
@@ -419,8 +417,8 @@
 										<tr>
 											<td valign="top" class="bodyContent">
 												<!-- // Begin Module: Standard Content \\ -->
-												<div mc:edit="std_content01" class="content-block-01">
-													<span class="h5">Headline for hotel</span><br>
+												<div mc:edit="std_content01" class="content-block-02 copy-text">
+													<h3>Headline for hotel</h3>
 													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 													<br>
 													<br>
@@ -452,7 +450,7 @@
 																<tr>
 																	<td>
 																		<div mc:edit="2c_img_head_01" mc:hideable="" class="margin-bottom-10">
-																			<span class="h5">Headline for hotel</span>
+																			<h3>Headline for hotel</h3>
 																		</div>
 																	</td>
 																</tr>
@@ -463,15 +461,15 @@
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-25">
-																			<span class="h5">Headline for hotel</span><br>
-																			Duis aute irure dolor in reprehenderit.
+																		<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-10 copy-text">
+																			<h3>Headline for hotel</h3>
+																				Duis aute irure dolor in reprehenderit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book01" class="margin-top-25">
+																		<div mc:edit="book01" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -484,7 +482,7 @@
 																<tr>
 																	<td>
 																		<div mc:edit="2c_img_head_02" mc:hideable="" class="margin-bottom-10">
-																			<span class="h5">Headline for hotel</span>
+																			<h3>Headline for hotel</h3>
 																		</div>
 																	</td>
 																</tr>
@@ -495,15 +493,15 @@
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-25">
-																			<span class="h5">Headline for hotel</span><br>
+																		<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-10 copy-text">
+																			<h3>Headline for hotel</h3>
 																			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book02" class="margin-top-25">
+																		<div mc:edit="book02" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -536,15 +534,15 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content01" mc:hideable="">
-																			<span class="h5">Headline for hotel</span><br>
+																		<div mc:edit="img_content01" mc:hideable="" class="copy-text">
+																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_01" class="margin-top-25">
+																		<div mc:edit="img_link_01" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -570,15 +568,15 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content02" mc:hideable="">
-																			<span class="h5">Headline for hotel</span><br>
+																		<div mc:edit="img_content02" mc:hideable="" class="copy-text">
+																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_02" class="margin-top-25">
+																		<div mc:edit="img_link_02" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -598,15 +596,15 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content03" mc:hideable="">
-																			<span class="h5">Headline for hotel</span><br>
+																		<div mc:edit="img_content03" mc:hideable="" class="copy-text">
+																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_03" class="margin-top-25">
+																		<div mc:edit="img_link_03" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -632,15 +630,15 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content04" mc:hideable="">
-																			<span class="h5">Headline for hotel</span><br>
+																		<div mc:edit="img_content04" mc:hideable="" class="copy-text">
+																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_04" class="margin-top-25">
+																		<div mc:edit="img_link_04" class="margin-top-10">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -690,14 +688,15 @@
 														<td valign="top">
 															<table border="0" cellpadding="0" cellspacing="10" width="100%" mc:repeatable="">
 																<tr><td>
-																<div mc:edit="dates_content02">
-																	<span class="h4" style="margin-bottom: 0px;">Headline for events</span>
+																<div mc:edit="dates_content02" class="copy-text">
+																		<h3>Headline for hotel</h3>
+																		Duis aute irure dolor in reprehenderit.
 																</div>
 																</td></tr>
 															</table>
 															<table border="0" cellpadding="0" cellspacing="10" width="100%" mc:repeatable="">
 																<tr><td mc:edit="month" class="month">September</td></tr>
-																<tr><td mc:edit="days" class="days">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
+																<tr><td mc:edit="days" class="days copy-text">14. bis 21.07 | 21. bis 28.07 | 28.07 bis 04.08</td></tr>
 															</table>
 														</td>
 													</tr>
