@@ -69,14 +69,14 @@
 				margin-bottom: 5px;
 				display:block;
 			}
-			.contentBox{
-				background-color: #ffffff !important;
-				background: #ffffff !important;
-			}
 			.copy-text{
 				font-size: 14px;
 				line-height: 150%;
 				font-family:Arial;
+			}
+			.contentBox{
+				background-color: #ffffff !important;
+				background: #ffffff !important;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templatePreheader{
@@ -225,8 +225,11 @@
 				/*@editable*/ color:#ffffff !important;
 			}
 			.column{
-				padding: 10px 10px;
-        width: 280px;
+        width: 300px;
+			}
+			.column-img, .column-content{
+				margin: 10px 10px;
+        width: 280px;				
 			}
 /*		@media only screen and (min-width:20px){
 				#templatePreheader{ width: 100% !important; max-width: 600px; }
@@ -259,16 +262,35 @@
 					font-size: 14px !important;
 				}
 			}
-	      @media only screen and (max-width:480px){
-				.headerContent{
-					width: 100% !important;
-					max-width: 480px !important;
+*/
+      @media only screen and (max-width:590px){
+				#templatePreheader, #templateFooter,
+				#templateContainer{
+					width: 320px;
 				}
-				.headerContent img{
-					width: 100% !important;
-					max-width: 460px !important;
+				#templateHeader{
+					width: 320px;
 				}
-	      }*/
+				.contentBox{
+					width: 320px;
+				}
+				h1{ font-size:24px; }
+				h2{ font-size:22px; }
+				h3{ font-size:20px; }
+				h4, h5{ font-size:16px;}
+				.copy-text{
+					font-size: 16px;
+					line-height: 150%;
+					font-family:Arial;
+				}
+				.column{
+	        width: 320px;
+				}
+				.column-img, .column-content{
+					margin: 10px 10px;
+	        width: 300px;				
+				}
+      }
 		</style>
 		<!--[if gte mso 9]>
 		<style type="text/css">
@@ -449,19 +471,19 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<div mc:edit="2c_img_head_01" mc:hideable="" class="margin-bottom-10">
+																		<div mc:edit="2c_img_head_01" mc:hideable="" class="margin-bottom-10 column-content">
 																			<h3>Headline for hotel</h3>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px;" mc:label="2c_img_01" mc:edit="2c_img_01" mc:allowdesigner="" mc:allowtext="">
+																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" height="auto" class="column-img" mc:label="2c_img_01" mc:edit="2c_img_01" mc:allowdesigner="" mc:allowtext="">
 																	</td>
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-10 copy-text">
+																		<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-10 copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																				Duis aute irure dolor in reprehenderit.
 																		</div>
@@ -469,7 +491,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book01" class="margin-top-10">
+																		<div mc:edit="book01" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -481,19 +503,19 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td>
-																		<div mc:edit="2c_img_head_02" mc:hideable="" class="margin-bottom-10">
+																		<div mc:edit="2c_img_head_02" mc:hideable="" class="margin-bottom-10 column-content">
 																			<h3>Headline for hotel</h3>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px;" mc:label="2c_img_02" mc:edit="2c_img_02" mc:allowdesigner="" mc:allowtext="">
+																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="2c_img_02" mc:edit="2c_img_02" mc:allowdesigner="" mc:allowtext="">
 																	</td>
 																</tr>
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-10 copy-text">
+																		<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-10 copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 																		</div>
@@ -501,7 +523,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book02" class="margin-top-10">
+																		<div mc:edit="book02" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -534,7 +556,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content01" mc:hideable="" class="copy-text">
+																		<div mc:edit="img_content01" mc:hideable="" class="copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
@@ -542,7 +564,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_01" class="margin-top-10">
+																		<div mc:edit="img_link_01" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -551,7 +573,7 @@
 														</td>
 
 														<td align="right" valign="top" class="column">
-															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg_01" mc:edit="boximg_01" mc:allowdesigner="" mc:allowtext="">
+															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="boximg_01" mc:edit="boximg_01" mc:allowdesigner="" mc:allowtext="">
 														</td>
 													</tr>
 												</table>
@@ -562,13 +584,13 @@
 												<table border="0" cellpadding="0" cellspacing="0">
 													<tr>
 														<td align="right" valign="top" class="column">
-															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg_02" mc:edit="boximg_02" mc:allowdesigner="" mc:allowtext="">
+															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="boximg_02" mc:edit="boximg_02" mc:allowdesigner="" mc:allowtext="">
 														</td>
 														<td align="center" valign="top" class="column">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content02" mc:hideable="" class="copy-text">
+																		<div mc:edit="img_content02" mc:hideable="" class="copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
@@ -576,7 +598,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_02" class="margin-top-10">
+																		<div mc:edit="img_link_02" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -596,7 +618,7 @@
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content03" mc:hideable="" class="copy-text">
+																		<div mc:edit="img_content03" mc:hideable="" class="copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
@@ -604,7 +626,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_03" class="margin-top-10">
+																		<div mc:edit="img_link_03" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
@@ -613,7 +635,7 @@
 														</td>
 
 														<td align="right" valign="top" class="column">
-															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg_03" mc:edit="boximg_03" mc:allowdesigner="" mc:allowtext="">
+															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="boximg_03" mc:edit="boximg_03" mc:allowdesigner="" mc:allowtext="">
 														</td>
 													</tr>
 												</table>
@@ -624,13 +646,13 @@
 												<table border="0" cellpadding="0" cellspacing="0" mc:variant="content with left image">
 													<tr>
 														<td align="right" valign="top" class="column">
-															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" width="100%" height="auto" style="max-width:280px; display: inline-block;" mc:label="boximg_04" mc:edit="boximg_04" mc:allowdesigner="" mc:allowtext="">
+															<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="boximg_04" mc:edit="boximg_04" mc:allowdesigner="" mc:allowtext="">
 														</td>
 														<td align="center" valign="top" class="column">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td valign="top" class="bodyContent">
-																		<div mc:edit="img_content04" mc:hideable="" class="copy-text">
+																		<div mc:edit="img_content04" mc:hideable="" class="copy-text column-content">
 																			<h3>Headline for hotel</h3>
 																			Duis aute irure dolor in reprehenderit.
 																		</div>
@@ -638,7 +660,7 @@
 																</tr>
 																<tr>
 																	<td align="right" class="booking-link-box">
-																		<div mc:edit="img_link_04" class="margin-top-10">
+																		<div mc:edit="img_link_04" class="margin-top-10 column-content">
 																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
 																		</div>
 																	</td>
