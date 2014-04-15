@@ -117,9 +117,10 @@
 				height: auto !important;
 				width: 600px !important;
 			}
-			.headerContent img{
-				height: auto !important;
-				width: 580px;
+			.banner-image{
+				margin-top: 10px;
+				height:auto !important;
+				width:580px !important;
 			}
 			.logoHeader{
 				/*@editable*/ color:#333333;
@@ -135,10 +136,6 @@
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
-			}
-			.banner-image{
-				height:auto !important;
-				width:600px !important;
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: MAIN BODY /\/\/\/\/\/\/\/\/\/\ */
 			.bodyContent{
@@ -225,6 +222,7 @@
 				/*@editable*/ color:#ffffff !important;
 			}
 			.column{
+				float: left;
         width: 300px;
 			}
 			.column-img, .column-content{
@@ -289,6 +287,11 @@
 				.column-img, .column-content{
 					margin: 10px 10px;
 	        width: 300px;				
+				}
+				.banner-image{
+					height:auto !important;
+					width:300px !important;
+					margin: 10px 10px;
 				}
       }
 		</style>
@@ -466,69 +469,71 @@
 											<td align="center" valign="top">
 												<table border="0" cellpadding="0" cellspacing="0">
 													<tr>
+														<td>
+																<!-- <td align="center" valign="top" class="column"> -->
+																<table border="0" cellpadding="0" cellspacing="0" class="column" align="left">
+																	<tr>
+																		<td>
+																			<div mc:edit="2c_img_head_01" mc:hideable="" class="margin-bottom-10 column-content">
+																				<h3>Headline for hotel</h3>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" height="auto" class="column-img" mc:label="2c_img_01" mc:edit="2c_img_01" mc:allowdesigner="" mc:allowtext="">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td valign="top" class="bodyContent">
+																			<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-10 copy-text column-content">
+																				<h3>Headline for hotel</h3>
+																					Duis aute irure dolor in reprehenderit.
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="right" class="booking-link-box">
+																			<div mc:edit="book01" class="margin-top-10 column-content">
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+																<!-- </td> -->
 
-														<td align="center" valign="top" class="column">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td>
-																		<div mc:edit="2c_img_head_01" mc:hideable="" class="margin-bottom-10 column-content">
-																			<h3>Headline for hotel</h3>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" height="auto" class="column-img" mc:label="2c_img_01" mc:edit="2c_img_01" mc:allowdesigner="" mc:allowtext="">
-																	</td>
-																</tr>
-																<tr>
-																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_01" mc:hideable="" class="margin-top-10 copy-text column-content">
-																			<h3>Headline for hotel</h3>
-																				Duis aute irure dolor in reprehenderit.
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book01" class="margin-top-10 column-content">
-																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
-																		</div>
-																	</td>
-																</tr>
-															</table>
-														</td>
-
-														<td align="center" valign="top" class="column">
-															<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																<tr>
-																	<td>
-																		<div mc:edit="2c_img_head_02" mc:hideable="" class="margin-bottom-10 column-content">
-																			<h3>Headline for hotel</h3>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="2c_img_02" mc:edit="2c_img_02" mc:allowdesigner="" mc:allowtext="">
-																	</td>
-																</tr>
-																<tr>
-																	<td valign="top" class="bodyContent">
-																		<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-10 copy-text column-content">
-																			<h3>Headline for hotel</h3>
-																			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td align="right" class="booking-link-box">
-																		<div mc:edit="book02" class="margin-top-10 column-content">
-																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
-																		</div>
-																	</td>
-																</tr>
-															</table>
+																<!-- <td align="center" valign="top" class="column"> -->
+																<table border="0" cellpadding="0" cellspacing="0" class="column" align="right">
+																	<tr>
+																		<td>
+																			<div mc:edit="2c_img_head_02" mc:hideable="" class="margin-bottom-10 column-content">
+																				<h3>Headline for hotel</h3>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_290x290.png" class="column-img" height="auto" mc:label="2c_img_02" mc:edit="2c_img_02" mc:allowdesigner="" mc:allowtext="">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td valign="top" class="bodyContent">
+																			<div mc:edit="2c_img_cont_02" mc:hideable="" class="margin-top-10 copy-text column-content">
+																				<h3>Headline for hotel</h3>
+																				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="right" class="booking-link-box">
+																			<div mc:edit="book02" class="margin-top-10 column-content">
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																			</div>
+																		</td>
+																	</tr>
+																</table>
+																<!-- </td> -->
+															</div>
 														</td>
 													</tr>
 												</table>
@@ -686,13 +691,13 @@
 										<!-- // Banner Image -->
 										<tr mc:hideable="">
 											<td align="center" valign="top">
-												<table border="0" cellpadding="10" cellspacing="0" width="100%">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
 														<td align="center" valign="top">
 															<table border="0" cellpadding="0" cellspacing="0" width="100%">
 																<tr>
 																	<td class="headerContent">
-																		<img style="max-width: 580px;" class="banner-image" src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_580x290.png" mc:label="dates_banner" mc:edit="dates_banner" mc:allowdesigner="" mc:allowtext="">
+																		<img class="banner-image" src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/mock_image_580x290.png" mc:label="dates_banner" mc:edit="dates_banner" mc:allowdesigner="" mc:allowtext="">
 																	</td>
 																</tr>
 															</table>
