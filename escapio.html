@@ -25,18 +25,10 @@
 			body, .backgroundTable{
 				/*@editable*/ background-color:#342922 !important;
 			}
-			h1{
-				/*@editable*/ color:#202020;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:22px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ text-align:left;
-				margin-top: 0;
-				margin-bottom: 20px;
-				display:block;
-			}
-			h2{
+			/**
+			* @style heading 1
+			*/
+			h1, .h1{
 				/*@editable*/ color:#202020;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:20px;
@@ -44,10 +36,13 @@
 				/*@editable*/ line-height:100%;
 				/*@editable*/ text-align:left;
 				margin-top: 0;
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 				display:block;
 			}
-			h3{
+			/**
+			* @style heading 2
+			*/
+			h2, .h2{
 				/*@editable*/ color:#202020;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:18px;
@@ -58,7 +53,24 @@
 				margin-bottom: 10px;
 				display:block;
 			}
-			h4, h5{
+			/**
+			* @style heading 3
+			*/
+			h3, .h3{
+				/*@editable*/ color:#202020;
+				/*@editable*/ font-family:Arial;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-weight:bold;
+				/*@editable*/ line-height:100%;
+				/*@editable*/ text-align:left;
+				margin-top: 0;
+				margin-bottom: 10px;
+				display:block;
+			}
+			/**
+			* @style heading 4
+			*/
+			h4, .h4, h5, .h5{
 				/*@editable*/ color:#202020;
 				/*@editable*/ font-family:Arial;
 				/*@editable*/ font-size:14px;
@@ -69,9 +81,12 @@
 				margin-bottom: 5px;
 				display:block;
 			}
+			/**
+			* @style copy text
+			*/
 			.copy-text{
-				font-size: 14px;
-				line-height: 150%;
+				font-size: 12px;
+				line-height: 135%;
 				font-family:Arial;
 			}
 			.contentBox{
@@ -80,19 +95,19 @@
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: PREHEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templatePreheader{
-				/*@editable*/ background-color:#342922;
+				background-color:#342922;
 			}
 			.preheaderContent div{
-				/*@editable*/ color:#ffffff;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:11px;
-				/*@editable*/ line-height:120%;
-				/*@editable*/ text-align:center;
+				color:#ffffff;
+				font-family:Arial;
+				font-size:11px;
+				line-height:120%;
+				text-align:center;
 			}
 			.preheaderContent div a:link, .preheaderContent div a:visited{
-				/*@editable*/ color:#91805f;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:none;
+				color:#91805f;
+				font-weight:normal;
+				text-decoration:none;
 			}
 
 			.preheaderContent div img{
@@ -101,8 +116,8 @@
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: HEADER /\/\/\/\/\/\/\/\/\/\ */
 			#templateHeader{
-				/*@editable*/ background-color:#910000 !important;
-				/*@editable*/ border-bottom:0;
+				background-color:#910000 !important;
+				border-bottom:0;
 				height: 120px !important;
 			}
 			.headerContent{
@@ -123,14 +138,14 @@
 				width:580px !important;
 			}
 			.logoHeader{
-				/*@editable*/ color:#333333;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:34px;
-				/*@editable*/ font-weight:bold;
-				/*@editable*/ line-height:100%;
-				/*@editable*/ padding: 20px 0;
-				/*@editable*/ text-align:center;
-				/*@editable*/ vertical-align:middle;
+				color:#333333;
+				font-family:Arial;
+				font-size:34px;
+				font-weight:bold;
+				line-height:100%;
+				padding: 20px 0;
+				text-align:center;
+				vertical-align:middle;
 			}
 			.headerContent a:link, .headerContent a:visited{
 				/*@editable*/ color:#91805f;
@@ -164,25 +179,29 @@
 			.month{
 				/*@editable*/ color:#333333;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-size:14px;
 				/*@editable*/ font-weight: bold;
 			}
 			.days{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-size:14px;
 				/*@editable*/ font-weight: bold;
 			}
-			.booking-link-box a{
+			/**
+			* @style link
+			*/
+			.booking-link-box a, .booking-link-box .booking-link{
 				/*@editable*/ color:#91805f;
 				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:18px;
-				/*@editable*/ font-weight: bold;
-				/*@editable*/ text-decoration: none;
+				/*@editable*/ font-size:18px !important;
+				/*@editable*/ font-weight: bold !important;
+				/*@editable*/ text-decoration: none !important;
 			}
 			.booking-link img, .column .booking-link img{
 				width: 24px !important;
-				height: 19px !important;
+				height: 22px !important;
+				margin: 0 !important;
 			}
 			.margin-bottom-10{
 				margin-bottom: 10px;
@@ -195,34 +214,34 @@
 			}
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
 			.footerContent div{
-				/*@editable*/ color:#FCF8F0;
-				/*@editable*/ font-family:Arial;
-				/*@editable*/ font-size:11px;
-				/*@editable*/ line-height:125%;
-				/*@editable*/ text-align:left;
+				color:#FCF8F0;
+				font-family:Arial;
+				font-size:11px;
+				line-height:125%;
+				text-align:left;
 			}
 			.footerContent div a:link, .footerContent div a:visited{
-				/*@editable*/ color:#91805f;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:none;
+				color:#91805f;
+				font-weight:normal;
+				text-decoration:none;
 			}
 			.footerContent img{
 				display:inline;
 			}
 			#footer{
-				/*@editable*/ background-color:#342922 !important;
-				/*@editable*/ color:#ffffff !important;
+				background-color:#342922 !important;
+				color:#ffffff !important;
 			}
 			a.tel-link{
 				text-decoration: none !important;
 				color: #ffffff !important;
 			}
 			#social div{
-				/*@editable*/ text-align:center;
+				text-align:center;
 			}
 			#utility div{
-				/*@editable*/ text-align:center;
-				/*@editable*/ color:#ffffff !important;
+				text-align:center;
+				color:#ffffff !important;
 			}
 			.column{
 				float: left;
@@ -375,6 +394,14 @@
 															</div>
 														</td>
 													</tr>
+													<!-- // booking -->
+													<tr mc:hideable="">
+														<td valign="bottom" align="right" class="booking-link-box"> 
+															<div mc:edit="book-top" class="margin-top-10" style="width: 280px;">
+																<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
+															</div>
+														</td>
+													</tr>
 													<!-- // Signature -->
 													<tr mc:hideable="">
 														<td valign="top">
@@ -385,7 +412,7 @@
 																			Gute Reise wünscht Ihr
 																		</td>
 																	</tr>
-																	<tr>
+																	<tr mc:hideable="">
 																		<td class="signature-uwe">
 																			<img src="http://de.escapio.com/public/img/email/newsletter/signature-de.gif" mc:edit="signature_uwe">
 																			<br>
@@ -473,7 +500,7 @@
 																	<tr>
 																		<td align="right" class="booking-link-box">
 																			<div mc:edit="book01" class="margin-top-10 column-content" style="width: 280px;">
-																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																			</div>
 																		</td>
 																	</tr>
@@ -504,9 +531,9 @@
 																		</td>
 																	</tr>
 																	<tr>
-																		<td align="right" class="booking-link-box" style="width: 280px;">
+																		<td align="right" valign="bottom" class="booking-link-box" style="width: 280px;">
 																			<div mc:edit="book02" class="margin-top-10 column-content" style="width: 280px;">
-																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																			</div>
 																		</td>
 																	</tr>
@@ -557,9 +584,9 @@
 																		</td>
 																	</tr>
 																	<tr>
-																		<td align="right" class="booking-link-box">
+																		<td align="right" valign="bottom" class="booking-link-box">
 																			<div mc:edit="book03" class="margin-top-10 column-content" style="width: 280px;">
-																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																			</div>
 																		</td>
 																	</tr>
@@ -590,9 +617,9 @@
 																		</td>
 																	</tr>
 																	<tr>
-																		<td align="right" class="booking-link-box" style="width: 280px;">
+																		<td align="right" valign="bottom" class="booking-link-box" style="width: 280px;">
 																			<div mc:edit="book04" class="margin-top-10 column-content" style="width: 280px;">
-																				<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																				<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																			</div>
 																		</td>
 																	</tr>
@@ -640,9 +667,9 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td align="right" class="booking-link-box">
+																	<td align="right" valign="bottom" class="booking-link-box">
 																		<div mc:edit="img_link_02" class="margin-top-10 column-content">
-																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																		</div>
 																	</td>
 																</tr>
@@ -675,9 +702,9 @@
 																				</td>
 																			</tr>
 																			<tr>
-																				<td align="right" class="booking-link-box">
+																				<td align="right" valign="bottom" class="booking-link-box">
 																					<div mc:edit="img_link_04" class="margin-top-10 column-content">
-																						<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																						<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																					</div>
 																				</td>
 																			</tr>
@@ -720,9 +747,9 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td align="right" class="booking-link-box">
+																	<td align="right" valign="bottom" class="booking-link-box">
 																		<div mc:edit="img_link_01" class="margin-top-10 column-content">
-																			<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																			<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																		</div>
 																	</td>
 																</tr>
@@ -756,9 +783,9 @@
 																			</td>
 																		</tr>
 																		<tr>
-																			<td align="right" class="booking-link-box">
+																			<td align="right" valign="bottom" class="booking-link-box">
 																				<div mc:edit="img_link_01" class="margin-top-10 column-content">
-																					<a href="buchen" class="booking-link">Hotel Buchen<img src="http://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.png"></a>
+																					<a href="buchen" class="booking-link">Hotel Buchen<img src="https://gallery.mailchimp.com/47c66b18dec906d457d8c5268/images/arrow.1.png"></a>
 																				</div>
 																			</td>
 																		</tr>
@@ -856,19 +883,6 @@
 																	<br><br>
 																	Vertretungsberechtigter Geschäftsführer: Uwe Frers<br>
 																	Registergericht: Amtsgericht Berlin Charlottenburg | Registernummer: HRB 94491 B
-																<!-- // Language: Spanish \\ -->
-																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a>
-																	<br><br>
-																	This newsletter was sent to <a href="*|EMAIL|*">*|EMAIL|*</a> by Escapio.<br>
-																	If you no longer wish to receive our special offers, <a href="*|UNSUB|*">unsubscribe from the newsletter here</a>.
-																	<br><br>
-																	*|LIST:COMPANY|* | Am Treptower Park 28 | 12435 Berlin | Germany<br>
-																	<a class="tel-link" href="tel:00493061651690">T +49 30 6165 1690</a>, <a class="tel-link" href="tel:00493061651699">F +49 30 6165 1699</a>, <a href="mailto:news@escapio.com">news@escapio.com</a>, <a href="http://www.escapio.com">www.escapio.com</a>
-																	<br><br>
-																	Managing Director: Uwe Frers<br>
-																	Register Court: Amtsgericht Berlin Charlottenburg | Trade Register No.: HRB 94491 B
-																*|ELSEIF:LANGCODE=es|*
-																<!-- // Language: English \\ -->
 																*|ELSE:|*
 																	<a href="*|UPDATE_PROFILE|*">Update your contact details here</a>
 																	<br><br>
